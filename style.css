@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@font-face {
+  font-family: norse-bold;
+  src: url(./Norse-Bold.otf);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+aside {
+  position: relative;
+  height: 100vh;
+  width: clamp(300px, 35%, 400px);
+  background-image: url('./halie-west-25xggax4bSA-unsplash.jpg');
+  background-size: cover;
+  padding-top: 10rem;
+}
+
+.heading-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 10rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.heading-container > h1 {
+  font-family: norse-bold, sans-serif;
+  font-size: 6rem;
+}
+
+.heading-container > img {
+  height: 8rem;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+}
+
+.photo-credit,
+.photo-credit > a,
+.photo-credit > a:visited {
+  font-size: 0.8rem;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
